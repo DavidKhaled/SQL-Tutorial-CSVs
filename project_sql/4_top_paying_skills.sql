@@ -7,7 +7,6 @@ Answer: What are the top skills based on salary?
 */
 SELECT
     skills,
-    COUNT(filtered_table.job_id) AS number_of_jobs,
     TO_CHAR(AVG(yearly_salary),'FM999,999,999,990.00') AS avg_salary
 FROM (
     SELECT
